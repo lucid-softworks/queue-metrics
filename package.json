@@ -1,6 +1,6 @@
 {
   "name": "@lucid-softworks/queue-metrics",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "In-process queue throughput, failure, activity, and latency metrics.",
   "keywords": [
     "javascript",
