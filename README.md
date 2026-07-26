@@ -6,7 +6,12 @@ Projects queue lifecycle events into an in-process metrics snapshot.
 import { QueueMetrics } from "@lucid-softworks/queue-metrics";
 
 const metrics = new QueueMetrics();
-events.subscribe((event) => metrics.observe(event));
+metrics.observe({
+  jobId: "job-1",
+  name: "send-email",
+  timestamp: Date.now(),
+  type: "job-completed",
+});
 console.log(metrics.snapshot.averageDuration);
 ```
 
